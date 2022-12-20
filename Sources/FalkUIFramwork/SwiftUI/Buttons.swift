@@ -12,6 +12,10 @@ import SwiftUI
 public struct StandardButton: View {
     @ObservedObject var viewModel: ViewModel
     
+    public init(viewModel: ViewModel) {
+        self.viewModel = viewModel
+    }
+    
     public var body: some View {
         Button {
             viewModel.tapAction()
