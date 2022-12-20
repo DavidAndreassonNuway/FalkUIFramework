@@ -29,7 +29,7 @@ public struct StandardButton: View {
 public final class ViewModel: ObservableObject {
     public let tapAction: () -> Void
     
-    init(tapAction: @escaping () -> Void) {
+    public init(tapAction: @escaping () -> Void) {
         self.tapAction =  tapAction
     }
 }
